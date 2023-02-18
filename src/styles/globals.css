@@ -1,3 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
+
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+@layer base {
+  body {
+    @apply font-montserrat bg-[#1A191D];
+  }
+}
+
+.home {
+  background: url("../assets/bg-home.jpg") center;
+  background-size: cover;
+  max-width: 100%;
+}
