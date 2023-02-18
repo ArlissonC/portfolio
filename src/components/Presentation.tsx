@@ -1,8 +1,9 @@
 import Light from "./Light";
+import ScrollMouse from "@/assets/svgs/scroll-mouse.svg";
 
 const Presentation = () => {
   return (
-    <div className="flex flex-col justify-center items-center space-y-24 mt-40">
+    <section className="flex flex-col justify-center items-center space-y-24 mt-40">
       <div className="relative left-32 animate-light">
         <Light />
       </div>
@@ -14,7 +15,10 @@ const Presentation = () => {
           Desenvolvedor Front-end
         </p>
       </div>
-    </div>
+      <div className="w-6 absolute left-[50%] bottom-[12%] animate-scrollDown">
+        <ScrollMouse />
+      </div>
+    </section>
   );
 };
 

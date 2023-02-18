@@ -15,6 +15,10 @@ module.exports = {
           "0%": { transform: "translate3d(0, -30px, 0)", opacity: 0 },
           "100%": { transform: "translate3d(0, 0, 0)", opacity: 1 },
         },
+        scrollDown: {
+          "0%": { transform: "translateY(10px)" },
+          "100%": { transform: "translateY(0)" },
+        },
         light: {
           "0%": { transform: "translateX(30px)" },
           "100%": { transform: "translateX(0)" },
@@ -23,6 +27,7 @@ module.exports = {
       animation: {
         topMenu: "topMenu 0.5s forwards",
         light: "light 2s infinite alternate",
+        scrollDown: "scrollDown 1s infinite alternate",
       },
       colors: {
         brand: "#17F9FF",
@@ -36,6 +41,9 @@ module.exports = {
       },
       dropShadow: {
         "3xl": "1px 3px 4px rgba(0, 0, 0, 0.25)",
+      },
+      fontSize: {
+        s: "0.625rem",
       },
     },
   },
