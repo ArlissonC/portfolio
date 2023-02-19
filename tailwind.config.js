@@ -31,6 +31,7 @@ module.exports = {
       },
       colors: {
         brand: "#17F9FF",
+        "brand-dark": "#1E1E1E",
       },
       fontFamily: {
         montserrat: ["Montserrat"],

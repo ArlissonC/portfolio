@@ -27,3 +27,7 @@
     #1a191d 100%
   );
 }
+
+.section-title {
+  @apply text-brand text-3xl font-semibold mb-6 text-center;
+}
