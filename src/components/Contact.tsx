@@ -3,9 +3,9 @@ import { ImLinkedin } from "react-icons/im";
 
 const Contact = () => {
   return (
-    <section className="mt-36 mb-12 flex flex-col items-center">
+    <section className="mt-36 mb-12 flex flex-col items-center" id="contacts">
       <h1 className="section-title mb-10">Contato</h1>
-      <div className="flex gap-16">
+      <div className="flex flex-wrap justify-center gap-12 md:gap-16">
         {contacts.map(({ Icon, dns, label, url }) => (
           <div key={label} className="flex flex-col items-center">
             <a

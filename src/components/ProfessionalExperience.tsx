@@ -1,12 +1,11 @@
 import Accordion from "./Accordion";
 import { FiExternalLink } from "react-icons/fi";
 import { GoLocation } from "react-icons/go";
-import LogoLuma from "@/assets/svgs/logo-luma.svg";
 import { profissionalExperiences } from "@/data";
 
 const ProfessionalExperience = () => {
   return (
-    <section className="mt-48">
+    <section className="mt-48" id="professionalExperience">
       <h1 className="section-title mb-10">Experiência Profissional</h1>
       {profissionalExperiences.map(
         ({
@@ -18,11 +17,17 @@ const ProfessionalExperience = () => {
           title,
           period,
           webSiteDns,
+          current,
         }) => (
-          <Accordion label={title} period={period} key={title}>
-            <div className="flex items-center gap-16">
+          <Accordion
+            current={current}
+            label={title}
+            period={period}
+            key={title}
+          >
+            <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16">
               <div className="flex flex-col space-y-6 max-w-xl">
-                <div className="flex gap-16">
+                <div className="flex flex-col md:flex-row gap-4 md:gap-16">
                   <div className="flex items-center gap-2">
                     <GoLocation className="text-2xl text-brand" />
                     <span className="text-sm font-semibold text-white">

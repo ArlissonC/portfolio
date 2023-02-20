@@ -8,11 +8,19 @@
   body {
     @apply font-montserrat bg-[#1A191D];
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+:target {
+  scroll-margin-top: 5rem;
 }
 
 .home {
   position: relative;
-  background: url("../assets/images/bg-home.jpg") center;
+  background-position: center;
   background-size: cover;
   max-width: 100%;
 }
@@ -29,11 +37,11 @@
 }
 
 .section-title {
-  @apply text-brand text-3xl font-semibold mb-6 text-center;
+  @apply text-brand text-2xl md:text-3xl font-semibold mb-6 text-center;
 }
 
 .content-parent {
-  height: 0px;
+  height: 0;
   overflow: hidden;
   transition: height ease 0.3s;
 }

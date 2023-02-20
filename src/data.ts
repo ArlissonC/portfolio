@@ -14,6 +14,14 @@ import { ImLinkedin } from "react-icons/im";
 import { AiFillGithub } from "react-icons/ai";
 import { MdEmail } from "react-icons/md";
 
+export const optionsMenu = [
+  { label: "Início", href: "#home" },
+  { label: "Habilidades", href: "#skills" },
+  { label: "Experiência", href: "#professionalExperience" },
+  { label: "Projetos", href: "#projects" },
+  { label: "Contato", href: "#contacts" },
+];
+
 export const stacks = {
   main: [
     { label: "React", Icon: React },
@@ -68,6 +76,7 @@ export const profissionalExperiences = [
       "Responsável por estruturar e desenvolver o redesign da plataforma, garantindo que a interface do usuário do site seja amigável, intuitiva e fácil de usar. Para isso, trabalho em conjunto com a equipe de design para criar um layout moderno e atraente que seja funcional e coerente com a marca da empresa e mantendo um padrão de desenvolvimento escalável.",
     technologies: ["React", "TypeScript", "Redux", "TailwindCSS"],
     Logo: LogoLuma,
+    current: true,
   },
   {
     title: "Desenvolvedor Front-end - Problem Company",
@@ -79,6 +88,7 @@ export const profissionalExperiences = [
       "Desenvolvimento de novas features, correção de bugs e erros de lógica, construir arquitetura Front-end de acordo com novas funcionalidades e necessidades, manter um padrão de desenvolvimento escalável e auxiliar a atuação de novos desenvolvedores na equipe.",
     technologies: ["React", "TypeScript", "Redux", "Material UI", "gRPC"],
     Logo: LogoProblemCompany,
+    current: false,
   },
 ];
 

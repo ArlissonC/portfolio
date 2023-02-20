@@ -19,9 +19,12 @@ const Projects = () => {
   };
 
   return (
-    <section className="flex flex-col justify-center items-center">
+    <section
+      className="flex flex-col justify-center items-center"
+      id="projects"
+    >
       <h1 className="section-title mb-10">Projetos</h1>
-      <div className="flex flex-wrap gap-x-8 gap-y-12">
+      <div className="flex justify-center flex-wrap gap-x-8 gap-y-12">
         {projects.map((project) => (
           <button
             key={project.name}
@@ -48,11 +51,11 @@ const Projects = () => {
         setOpen={setOpenModalProject}
         title={selectedProject.name}
       >
-        <div className="flex justify-between items-center mb-20">
-          <p className="font-semibold text-white max-w-xl text-sm">
+        <div className="flex flex-col md:flex-row justify-between items-center mb-20">
+          <p className="font-semibold text-white max-w-xl text-sm text-center md:text-left">
             {selectedProject.about}
           </p>
-          <div className="max-w-[16rem] text-center">
+          <div className="max-w-[16rem] text-center mt-8 md:mt-0">
             <p className="font-bold text-brand">Competências</p>
             {selectedProject.technologies?.map((tec) => (
               <React.Fragment key={tec}>
