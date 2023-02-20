@@ -2,7 +2,7 @@ import { stacks } from "@/data";
 
 const Skills = () => {
   return (
-    <section className="mx-auto max-w-7xl pt-28 flex flex-col items-center justify-center mb-40">
+    <section className="pt-28 flex flex-col items-center justify-center mb-40">
       <h1 className="section-title">Habilidades</h1>
       <div className="flex flex-col items-center space-y-8">
         <div className="flex space-x-8">

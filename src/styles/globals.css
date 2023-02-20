@@ -31,3 +31,9 @@
 .section-title {
   @apply text-brand text-3xl font-semibold mb-6 text-center;
 }
+
+.content-parent {
+  height: 0px;
+  overflow: hidden;
+  transition: height ease 0.3s;
+}

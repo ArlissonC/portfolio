@@ -19,7 +19,7 @@ const Projects = () => {
   };
 
   return (
-    <section className="mx-auto max-w-7xl flex flex-col justify-center items-center">
+    <section className="flex flex-col justify-center items-center">
       <h1 className="section-title mb-10">Projetos</h1>
       <div className="flex flex-wrap gap-x-8 gap-y-12">
         {projects.map((project) => (
@@ -36,7 +36,7 @@ const Projects = () => {
               className="rounded-t-lg"
               priority
             />
-            <div className="w-full px-5 py-4 bg-brand-dark font-semibold text-left">
+            <div className="w-full px-5 py-4 bg-brand-dark font-semibold text-left rounded-b-lg">
               <p className="text-brand mb-1">{project.name}</p>
               <span className="text-white text-xs">Ver mais ―</span>
             </div>

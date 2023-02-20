@@ -8,6 +8,11 @@ import MaterialUI from "@/assets/svgs/materialui.svg";
 import Bootstrap from "@/assets/svgs/bootstrap.svg";
 import Sass from "@/assets/svgs/sass.svg";
 import Figma from "@/assets/svgs/figma.svg";
+import LogoLuma from "@/assets/svgs/logo-luma.svg";
+import LogoProblemCompany from "@/assets/svgs/problem-company-logo.svg";
+import { ImLinkedin } from "react-icons/im";
+import { AiFillGithub } from "react-icons/ai";
+import { MdEmail } from "react-icons/md";
 
 export const stacks = {
   main: [
@@ -49,5 +54,51 @@ export const projects = [
     bgSrc: "https://i.imgur.com/orBLRZa.jpg",
     webSiteUrl: "https://dogs-arlissonc.vercel.app/",
     technologies: ["React", "TypeScript", "Redux", "Victory"],
+  },
+];
+
+export const profissionalExperiences = [
+  {
+    title: "Desenvolvedor Front-end - LUMA Ensino Individualizado",
+    webSiteDns: "lumaensino.com.br",
+    location: "Remoto (Vitória - ES)",
+    period: "Fev de 2022 - Atual",
+    webSiteUrl: "https://lumaensino.com.br/",
+    description:
+      "Responsável por estruturar e desenvolver o redesign da plataforma, garantindo que a interface do usuário do site seja amigável, intuitiva e fácil de usar. Para isso, trabalho em conjunto com a equipe de design para criar um layout moderno e atraente que seja funcional e coerente com a marca da empresa e mantendo um padrão de desenvolvimento escalável.",
+    technologies: ["React", "TypeScript", "Redux", "TailwindCSS"],
+    Logo: LogoLuma,
+  },
+  {
+    title: "Desenvolvedor Front-end - Problem Company",
+    webSiteDns: "problemcompany.org",
+    location: "Remoto (Nova York, Estados Unidos)",
+    period: "Jan de 2023 - Fev de 2023",
+    webSiteUrl: "https://problemcompany.org/",
+    description:
+      "Desenvolvimento de novas features, correção de bugs e erros de lógica, construir arquitetura Front-end de acordo com novas funcionalidades e necessidades, manter um padrão de desenvolvimento escalável e auxiliar a atuação de novos desenvolvedores na equipe.",
+    technologies: ["React", "TypeScript", "Redux", "Material UI", "gRPC"],
+    Logo: LogoProblemCompany,
+  },
+];
+
+export const contacts = [
+  {
+    url: "https://www.linkedin.com/in/arlissoncosta/",
+    label: "LinkedIn",
+    dns: "in/arlissoncosta",
+    Icon: ImLinkedin,
+  },
+  {
+    url: "https://github.com/ArlissonC",
+    label: "GitHub",
+    dns: "arlissonc",
+    Icon: AiFillGithub,
+  },
+  {
+    url: "mailto:arlisson.fs13@gmail.com?",
+    label: "E-mail",
+    dns: "arlisson.fs13@gmail.com",
+    Icon: MdEmail,
   },
 ];
