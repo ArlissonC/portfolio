@@ -43,5 +43,5 @@
 .content-parent {
   height: 0;
   overflow: hidden;
-  transition: height ease 0.3s;
+  transition: ease 0.3s;
 }
