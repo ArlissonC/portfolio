@@ -32,8 +32,8 @@ const Projects = () => {
             onClick={() => viewMore(project)}
           >
             <Image
-              width={1510}
-              height={925}
+              width={370}
+              height={268}
               src={project.bgSrc}
               alt={project.name}
               className="rounded-t-lg"
