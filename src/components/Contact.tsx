@@ -18,7 +18,9 @@ const Contact = () => {
               <span className="sr-only">{label}</span>
               <Icon className="text-3xl text-brand" />
             </a>
-            <h6 className="text-white text-sm font-semibold mt-2">{label}</h6>
+            <span className="text-white text-sm font-semibold mt-2">
+              {label}
+            </span>
             <span className="text-xs text-brand font-semibold">{dns}</span>
           </div>
         ))}
