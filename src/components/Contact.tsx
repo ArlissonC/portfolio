@@ -11,9 +11,11 @@ const Contact = () => {
             <a
               href={url}
               target="_blank"
+              title={label}
               rel="noopener noreferrer"
               className="transition ease-in-out delay-75 bg-brand-light w-20 h-20 rounded-full hover:-translate-y-2 hover:scale-110 duration-300 flex justify-center items-center"
             >
+              <span className="sr-only">{label}</span>
               <Icon className="text-3xl text-brand" />
             </a>
             <h6 className="text-white text-sm font-semibold mt-2">{label}</h6>
