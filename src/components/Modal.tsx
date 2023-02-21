@@ -39,7 +39,7 @@ const Modal = ({ open, setOpen, title, children }: ModalProps) => {
               <Dialog.Panel className="relative transform overflow-hidden rounded-lg text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-5xl">
                 <div className="bg-brand-dark px-4 pt-5 pb-4 sm:p-6 sm:pb-4 flex flex-col rounded-lg">
                   <AiFillCloseCircle
-                    className="text-brand text-xl self-end"
+                    className="text-brand text-xl self-end cursor-pointer"
                     onClick={() => setOpen(false)}
                   />
 

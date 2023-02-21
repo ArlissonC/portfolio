@@ -6,6 +6,7 @@ import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import bg from "@/assets/images/bg-home.jpg";
 import Head from "next/head";
+import AboutMe from "@/components/AboutMe";
 
 const Home = () => {
   return (
@@ -19,14 +20,14 @@ const Home = () => {
         />
         <meta
           name="keywords"
-          content="HTML, CSS, JavaScript, Front-end, Back-end, Desenvolvedor Web, React, Next.js, Docker"
+          content="sites, sistemas web, desenvolvimento, frontend, arlisson costa, programador, arlisson, front-end, freelancer, freela, website, portfolio"
         />
         <meta name="author" content="Arlisson Costa" />
       </Head>
       <main>
         <section
           style={{ backgroundImage: `url(${bg.src})` }}
-          className="home w-screen h-screen"
+          className="home w-screen h-screen mb-28"
           id="home"
         >
           <Header />
@@ -34,6 +35,7 @@ const Home = () => {
           <div className="divider w-full h-64"></div>
         </section>
         <div className="mx-auto max-w-7xl px-2">
+          <AboutMe />
           <Skills />
           <Projects />
           <ProfessionalExperience />
