@@ -23,18 +23,18 @@ const Accordion = ({ children, label, period, current }: AccordionProps) => {
 
   return (
     <div className="max-w-4xl mx-auto">
-      <div className="text-brand-dark font-semibold bg-brand py-4 px-5 rounded-lg">
-        <button
-          className="flex items-center justify-between font-bold w-full"
-          onClick={() => setOpen(!open)}
-        >
+      <button
+        className="text-brand-dark font-semibold bg-brand py-4 px-5 rounded-lg w-full"
+        onClick={() => setOpen(!open)}
+      >
+        <div className="flex items-center justify-between font-bold">
           <p className="text-sm md:text-base">{label}</p>
           <div className="flex items-center gap-11">
             <span className="hidden md:block">{period}</span>
             <span className="text-lg">{open ? "―" : <BiPlus />}</span>
           </div>
-        </button>
-      </div>
+        </div>
+      </button>
       <div
         ref={contentRef}
         className="content-parent my-2 w-full bg-brand-light rounded-lg"
