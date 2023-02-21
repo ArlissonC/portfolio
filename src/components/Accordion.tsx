@@ -13,7 +13,10 @@ const Accordion = ({ children, label, period, current }: AccordionProps) => {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
-    if (current) setOpen(true);
+    if (current)
+      setTimeout(() => {
+        setOpen(true);
+      }, 100);
   }, [current]);
 
   const contentRef = useRef<HTMLDivElement | null>(null);
@@ -45,7 +48,7 @@ const Accordion = ({ children, label, period, current }: AccordionProps) => {
             : { height: "0px" }
         }
       >
-        <div className="py-5 px-8">{children}</div>
+        <div className="py-6 px-8">{children}</div>
       </div>
     </div>
   );

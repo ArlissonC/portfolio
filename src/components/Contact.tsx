@@ -1,5 +1,4 @@
 import { contacts } from "@/data";
-import { ImLinkedin } from "react-icons/im";
 
 const Contact = () => {
   return (
