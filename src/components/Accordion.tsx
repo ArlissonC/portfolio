@@ -16,7 +16,7 @@ const Accordion = ({ children, label, period, current }: AccordionProps) => {
     if (current)
       setTimeout(() => {
         setOpen(true);
-      }, 100);
+      }, 500);
   }, [current]);
 
   const contentRef = useRef<HTMLDivElement | null>(null);
