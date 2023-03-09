@@ -41,26 +41,12 @@ export const stacks = {
 
 export const projects = [
   {
-    name: "LUMA Ensino Individualizado",
-    about:
-      "Plataforma com plano mensal de aulas online individualizadas e ao vivo que potencializam os estudos. Os alunos têm acesso a professores altamente qualificados que adaptam o conteúdo e a metodologia de ensino às necessidades e objetivos individuais de cada aluno.",
-    bgSrc: "https://i.imgur.com/JC9NpGZ.jpg",
-    webSiteUrl: "https://lumaensino.com.br/",
-    technologies: [
-      "React",
-      "TypeScript",
-      "Redux",
-      "TailwindCSS",
-      "Figma",
-      "AngularJS",
-    ],
-  },
-  {
     name: "Dogs",
     about:
       "Uma rede social para cachorros, que permite aos usuários postar fotos de seus pets, incluindo informações como nome, peso e idade. Os usuários também podem comentar nas fotos de outros cachorros e acessar seus perfis para ver outras postagens. Além disso, a plataforma permite que os usuários vejam as estatísticas de visualizações de suas postagens, permitindo que acompanhem o desempenho de suas publicações na rede social.",
     bgSrc: "https://i.imgur.com/orBLRZa.jpg",
     webSiteUrl: "https://dogs-arlissonc.vercel.app/",
+    repository: "https://github.com/ArlissonC/dogs",
     technologies: ["React", "TypeScript", "Redux", "Victory"],
   },
 ];

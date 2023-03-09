@@ -67,15 +67,26 @@ const Projects = () => {
             ))}
           </div>
         </div>
-        <a
-          href={selectedProject.webSiteUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center space-x-2 mb-4 w-fit self-end"
-        >
-          <p className="font-bold text-brand">Abrir projeto</p>
-          <FiExternalLink className="text-brand text-2xl" />
-        </a>
+        <div className="flex gap-4 self-end items-center">
+          <a
+            href={selectedProject.repository}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center space-x-2 mb-4 w-fit self-end"
+          >
+            <p className="font-bold text-brand">Acessar repositório</p>
+            <FiExternalLink className="text-brand text-2xl" />
+          </a>
+          <a
+            href={selectedProject.webSiteUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center space-x-2 mb-4 w-fit self-end"
+          >
+            <p className="font-bold text-brand">Abrir projeto</p>
+            <FiExternalLink className="text-brand text-2xl" />
+          </a>
+        </div>
         <Image
           src={selectedProject.bgSrc}
           width={1510}
