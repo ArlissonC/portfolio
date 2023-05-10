@@ -13,16 +13,6 @@ const Home = () => {
     <>
       <Head>
         <title>Portfólio | Arlisson Costa - Desenvolvedor Front-end</title>
-        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta
-          name="description"
-          content="Desenvolvedor com foco em Front-end utilizando React e Next.js."
-        />
-        <meta
-          name="keywords"
-          content="sites, sistemas web, desenvolvimento, frontend, arlisson costa, programador, arlisson, front-end, freelancer, freela, website, portfolio"
-        />
-        <meta name="author" content="Arlisson Costa" />
       </Head>
       <main>
         <section
