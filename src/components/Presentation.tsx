@@ -8,7 +8,7 @@ const Presentation = () => {
         <Light />
       </div>
       <div className="flex flex-col justify-center items-center text-center">
-        <h1 className="text-4xl md:text-8xl font-extrabold text-white drop-shadow-3xl uppercase">
+        <h1 className="text-6xl md:text-8xl font-extrabold text-white drop-shadow-3xl uppercase">
           Arlisson Costa
         </h1>
         <div className="sub-text font-semibold">

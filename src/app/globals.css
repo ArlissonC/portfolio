@@ -79,12 +79,19 @@
 }
 
 .sub-text {
-  font-size: 2vmin;
+  font-size: 1.2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #8be9dd;
   font-family: JetBrains Mono, monospace !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .sub-text {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+  }
 }
 
 .h3::before {
