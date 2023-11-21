@@ -1,3 +1,5 @@
+"use client";
+
 import { optionsMenu } from "@/data";
 import { useEffect, useState } from "react";
 import { RxCode } from "react-icons/rx";
@@ -31,8 +33,11 @@ const Header = () => {
               key={label}
               className="font-medium text-white cursor-pointer hover:text-brand transition ease-in-out delay-75"
             >
-              <a href={href} className="flex items-center gap-1">
-                <RxCode className="text-xl" /> {label}
+              <a
+                href={href}
+                className="flex font-semibold items-center gap-1 text-lg"
+              >
+                <RxCode className="text-3xl" /> {label}
               </a>
             </li>
           ))}

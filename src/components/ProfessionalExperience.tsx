@@ -5,7 +5,7 @@ import { profissionalExperiences } from "@/data";
 
 const ProfessionalExperience = () => {
   return (
-    <section className="mt-48" id="professionalExperience">
+    <section className="mt-48" id="work">
       <h1 className="section-title mb-10">Experiência Profissional</h1>
       {profissionalExperiences.map(
         ({

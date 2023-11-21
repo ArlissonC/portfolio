@@ -1,13 +1,3 @@
-import React from "@/assets/svgs/react.svg";
-import NextJS from "@/assets/svgs/nextjs.svg";
-import TypeScript from "@/assets/svgs/typescript.svg";
-import TailwindCSS from "@/assets/svgs/tailwindcss.svg";
-import Redux from "@/assets/svgs/redux.svg";
-import AngularJS from "@/assets/svgs/angularjs.svg";
-import MaterialUI from "@/assets/svgs/materialui.svg";
-import Bootstrap from "@/assets/svgs/bootstrap.svg";
-import Sass from "@/assets/svgs/sass.svg";
-import Figma from "@/assets/svgs/figma.svg";
 import LogoLuma from "@/assets/svgs/logo-luma.svg";
 import LogoProblemCompany from "@/assets/svgs/problem-company-logo.svg";
 import { ImLinkedin } from "react-icons/im";
@@ -15,52 +5,75 @@ import { AiFillGithub } from "react-icons/ai";
 import { MdEmail } from "react-icons/md";
 
 export const optionsMenu = [
-  { label: "Início", href: "#home" },
-  { label: "Habilidades", href: "#skills" },
-  { label: "Experiência", href: "#professionalExperience" },
-  { label: "Projetos", href: "#projects" },
-  { label: "Contato", href: "#contacts" },
+  { label: "Início", href: "/#home" },
+  { label: "Experiência", href: "/#myExperience" },
+  { label: "Trabalho", href: "/#work" },
+  { label: "Projetos", href: "/#projects" },
+  { label: "Contato", href: "/#contacts" },
 ];
-
-export const stacks = {
-  main: [
-    { label: "React", Icon: React },
-    { label: "Next.js", Icon: NextJS },
-    { label: "TypeScript", Icon: TypeScript },
-    { label: "TailwindCSS", Icon: TailwindCSS },
-    { label: "Redux", Icon: Redux },
-  ],
-  relevant: [
-    { label: "AngularJS", Icon: AngularJS },
-    { label: "Material UI", Icon: MaterialUI },
-    { label: "Bootstrap", Icon: Bootstrap },
-    { label: "SASS", Icon: Sass },
-    { label: "Figma", Icon: Figma },
-  ],
-};
 
 export const projects = [
   {
+    id: 1,
     name: "Dogs",
+    slogan: "Uma rede social para cachorros",
+    bgSrc: "https://i.imgur.com/orBLRZa.jpg",
     about:
       "Uma rede social para cachorros, que permite aos usuários postar fotos de seus pets, incluindo informações como nome, peso e idade. Os usuários também podem comentar nas fotos de outros cachorros e acessar seus perfis para ver outras postagens. Além disso, a plataforma permite que os usuários vejam as estatísticas de visualizações de suas postagens, permitindo que acompanhem o desempenho de suas publicações na rede social.",
-    bgSrc: "https://i.imgur.com/orBLRZa.jpg",
+    images: [
+      "https://i.imgur.com/fycCpIo.png",
+      "https://i.imgur.com/AQGZF1j.png",
+      "https://i.imgur.com/GiVnmDo.png",
+      "https://i.imgur.com/5fa66V0.png",
+    ],
     webSiteUrl: "https://dogs-arlissonc.vercel.app/",
     repository: "https://github.com/ArlissonC/dogs",
     technologies: ["React", "TypeScript", "Redux", "Victory"],
+    prevProject: 1,
+    nextProject: 2,
+    nextProjectName: "ClubPizza",
+    nextProjectSlogan: "Sistema para pizzarias",
+  },
+  {
+    id: 2,
+    name: "ClubPizza",
+    slogan: "Sistema para pizzarias",
+    bgSrc: "https://i.imgur.com/YMYYann.jpg",
+    about:
+      "Solução abrangente para gerenciar uma pizzaria, integrando um ambiente web e um aplicativo móvel. No sistema web, a cozinha tem acesso a uma interface em tempo real que exibe os pedidos atuais, permitindo uma gestão eficiente do fluxo de trabalho. Além disso, oferece a capacidade de cadastrar novos produtos e categorias. O aplicativo móvel é projetado para os garçons, permitindo que eles cadastrem novas ordens com os itens desejados. Essas ordens são enviadas instantaneamente para a cozinha, otimizando a comunicação entre a equipe de atendimento e a equipe de preparação.",
+    images: ["https://i.imgur.com/YMYYann.jpg"],
+    technologies: [
+      "Next.js",
+      "Node.js",
+      "PostgreSQL",
+      "WebSocket",
+      "React Native",
+    ],
+    prevProject: 1,
+    nextProject: 2,
+    nextProjectName: "Dogs",
+    nextProjectSlogan: "Uma rede social para cachorros",
   },
 ];
 
 export const profissionalExperiences = [
   {
-    title: "Desenvolvedor Front-end - LUMA Ensino Individualizado",
+    title: "Desenvolvedor Full-Stack - LUMA Ensino Individualizado",
     webSiteDns: "lumaensino.com.br",
     location: "Remoto (Vitória - ES)",
-    period: "Fev de 2022 - Atual",
+    period: "Fev de 2022 - Nov 2023",
     webSiteUrl: "https://lumaensino.com.br/",
     description:
-      "Responsável por estruturar e desenvolver o redesign da plataforma, garantindo que a interface do usuário do site seja amigável, intuitiva e fácil de usar. Para isso, trabalho em conjunto com a equipe de design para criar um layout moderno e atraente que seja funcional e coerente com a marca da empresa e mantendo um padrão de desenvolvimento escalável.",
-    technologies: ["React", "TypeScript", "Redux", "TailwindCSS"],
+      "Migração da plataforma para Next.js e .NET 7, trabalhando no desenvolvimento de recursos, na refatoração do sistema e na integração com as respectivas tecnologias. Além disso, simultaneamente, estava envolvido na sustentação da plataforma atual, que utiliza .NET 3.1 e AngularJS.",
+    technologies: [
+      "Next.js",
+      "TailwindCSS",
+      "Entity Framework",
+      "Dapper",
+      ".NET Core",
+      "Microsoft SQL Server",
+      "RabbitMQ",
+    ],
     Logo: LogoLuma,
     current: true,
   },
