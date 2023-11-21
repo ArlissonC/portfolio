@@ -61,7 +61,7 @@ export const profissionalExperiences = [
     title: "Desenvolvedor Full-Stack - LUMA Ensino Individualizado",
     webSiteDns: "lumaensino.com.br",
     location: "Remoto (Vitória - ES)",
-    period: "Fev de 2022 - Nov 2023",
+    period: "Fev de 2022 - Nov de 2023",
     webSiteUrl: "https://lumaensino.com.br/",
     description:
       "Migração da plataforma para Next.js e .NET 7, trabalhando no desenvolvimento de recursos, na refatoração do sistema e na integração com as respectivas tecnologias. Além disso, simultaneamente, estava envolvido na sustentação da plataforma atual, que utiliza .NET 3.1 e AngularJS.",
