@@ -22,9 +22,6 @@ const Project = () => {
           <div className="flex gap-4 items-center">
             <span className="font-semibold">Próximo projeto</span>
             <div className="flex gap-2">
-              <Link href={`${currentProject?.prevProject}`}>
-                <IoMdArrowRoundBack className="text-2xl" />
-              </Link>
               <Link href={`${currentProject?.nextProject}`}>
                 <IoMdArrowRoundForward className="text-2xl" />
               </Link>
